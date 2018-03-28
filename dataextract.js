@@ -78,7 +78,7 @@ function read_xml(url,index){
 
 function parse_xml(elements, index) {
   elements[0].getText().then(function(text){
-    emailbody = emailbody + "Values are "+ text +" (Load Time), ";
+    emailbody = emailbody + "Values are " + text + " (Load Time), ";
   });
   elements[1].getText().then(function(text) {
     emailbody = emailbody + text + " (First Byte), and is the website I used for " + websites[index] + "\n\n";
@@ -87,6 +87,8 @@ function parse_xml(elements, index) {
   });
 }
 
+
+// Run The Code
 
 main(0);
 
